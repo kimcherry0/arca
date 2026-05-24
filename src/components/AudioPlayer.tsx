@@ -32,14 +32,14 @@ export const AudioPlayer: React.FC = () => {
         {isPlaying ? <Volume2 size={24} /> : <VolumeX size={24} />}
       </button>
       
-      <div className="hidden">
+      <div className="absolute w-[1px] h-[1px] overflow-hidden opacity-0 pointer-events-none -z-10">
         <ReactPlayer 
           url="https://youtu.be/J4QGeOffqKg?si=iMoitVnDWqw4xrzd"
           playing={isPlaying}
           loop={true}
           volume={0.4}
-          width="0"
-          height="0"
+          width="10px"
+          height="10px"
           config={{
             youtube: {
               playerVars: { autoplay: 0, controls: 0 }
