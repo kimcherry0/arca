@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { CharacterCard } from './components/CharacterCard';
 import { LocationModal } from './components/LocationModal';
+import { AudioPlayer } from './components/AudioPlayer';
 import { WORLDVIEW, LOCATIONS, CHARACTERS } from './data';
 
 export default function App() {
@@ -187,6 +188,8 @@ export default function App() {
            </h1>
         </div>
       )}
+      
+      <AudioPlayer />
       
       <LocationModal 
         isOpen={!!selectedLocation} 
