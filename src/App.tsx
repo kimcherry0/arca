@@ -183,19 +183,18 @@ export default function App() {
           
           <div className="flex flex-col lg:flex-row gap-12 items-start mt-8">
             {/* Video Embed */}
-            <div className="w-full lg:w-1/2 sticky top-32">
-              <div className="aspect-video w-full rounded-xl overflow-hidden border border-slate-700/50 shadow-[0_0_30px_rgba(0,0,0,0.5)] bg-black">
-                <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src="https://www.youtube.com/embed/J4QGeOffqKg?si=G88WMx7bJ6eSem8Y&controls=0" 
+            <div className="w-full lg:w-1/2 sticky top-32 flex justify-center lg:justify-start">
+               <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/J4QGeOffqKg?si=G88WMx7bJ6eSem8Y" 
                   title="YouTube video player" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                   referrerPolicy="strict-origin-when-cross-origin" 
                   allowFullScreen
+                  className="max-w-full rounded-xl border border-slate-700/50 shadow-[0_0_30px_rgba(0,0,0,0.5)] bg-black"
                 ></iframe>
-              </div>
             </div>
 
             {/* Lyrics */}
