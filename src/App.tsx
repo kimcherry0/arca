@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { CharacterCard } from './components/CharacterCard';
 import { LocationModal } from './components/LocationModal';
-import ReactPlayer from 'react-player';
 import { WORLDVIEW, LOCATIONS, CHARACTERS, LYRICS } from './data';
 
 export default function App() {
@@ -186,13 +185,16 @@ export default function App() {
             {/* Video Embed */}
             <div className="w-full lg:w-1/2 sticky top-32">
               <div className="aspect-video w-full rounded-xl overflow-hidden border border-slate-700/50 shadow-[0_0_30px_rgba(0,0,0,0.5)] bg-black">
-                <ReactPlayer 
-                  url="https://www.youtube.com/watch?v=J4QGeOffqKg"
-                  width="100%"
-                  height="100%"
-                  controls={true}
-                  playing={false}
-                />
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/J4QGeOffqKg?si=G88WMx7bJ6eSem8Y&controls=0" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
 
