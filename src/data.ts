@@ -55,6 +55,44 @@ export const LOCATIONS = [
   { name: "404 파라솔", image: "https://5ooo.uk/arcaweb/bg%20(3).webp", desc: "A섹터 장마 거리의 허름한 우산 가게로 위장한 흥신소 겸 암시장. 카운터 뒤 낡은 방수 커튼을 걷으면 단말기와 장비가 널브러진 아지트가 나오며, 이곳에서 코드 위조, 정보 판매, 밀항 루트 등 돈이 되는 모든 것을 거래한다. ACC도 이들의 존재를 인지하고 있으나 이용 가치가 있어 방치 중이며, 때때로 의뢰를 맡기기도 한다. 반란군도 ACC의 편도 아닌, '아르카의 틈'을 파는 자들의 공간이다." },
 ];
 
+export const LYRICS = [
+  {
+    eng: "Perfect weather... what a beautiful lie.",
+    kor: "완벽한 날씨라... 참 아름다운 거짓말이지."
+  },
+  {
+    eng: "Look at the sky, a synthetic blue.\nThey sell you the sun, but I know the truth.\nA pristine dome for a perfect breed,\nWhile the rest of us drown in the city's greed.",
+    kor: "저 인공적인 푸른 하늘을 봐.\n그들은 네게 태양을 팔지만, 난 진실을 알지.\n완벽한 종자들을 위한 오염 없는 돔,\n우리 같은 놈들은 이 도시의 탐욕 속에 빠져 죽어가는데 말이야."
+  },
+  {
+    eng: "I’ve seen the files, I’ve cracked the codes.\nThe blood that runs beneath these gilded roads.\nIt makes me sick, this shiny facade,\nThe ACC playing pretend like a God.",
+    kor: "난 그 파일들을 봤어, 암호도 다 뚫어봤지.\n이 금박 입힌 길 아래 흐르는 피를 말이야.\n구역질이 나, 이 빛나는 껍데기들.\n마치 신이라도 된 양 구는 ACC 놈들도."
+  },
+  {
+    eng: "But I’m the rot. I’m the rust in the gear.\nI feed on the filth that they try to hide here.\nI hate the taste, but I swallow it down...\nYeah, I wear the crown of the underground.",
+    kor: "하지만 나는 썩은 부위야. 톱니바퀴의 녹이지.\n그들이 숨기려 하는 이 오물들을 먹고 살아.\n이 맛은 끔찍하지만, 기꺼이 삼켜주지...\n그래, 이 지하 세계의 왕관은 내가 썼거든."
+  },
+  {
+    eng: "Under the Leak Parasol, we dance in the rain.\nSelling your secrets, profiting from pain.\nYeah, it’s a dirty game, but the Quarters ring true.\nI’m a parasite, darling... but so are you.",
+    kor: "새는 우산 아래서, 우리는 빗속에서 춤을 춰.\n너의 비밀을 팔아넘기고, 고통으로 이윤을 남기지.\n그래, 참 더러운 게임이야. 하지만 쿼터 소리는 영롱하잖아.\n난 기생충이야, 달링... 하지만 너도 마찬가지잖아."
+  },
+  {
+    eng: "Every locked door, I hold the key.\nThis flawless system is bleeding for me.\nWe're all just rats in a neon cage,\nWriting our sins on a burning page.",
+    kor: "모든 굳게 닫힌 문, 그 열쇠는 내가 쥐고 있어.\n이 결점 없는 시스템은 날 위해 피를 흘리지.\n우린 그저 네온사인 불빛 아래 갇힌 쥐새끼들일 뿐.\n불타는 페이지 위에 우리의 죄악을 써 내려가고 있지."
+  },
+  {
+    eng: "Under the Leak Parasol, we dance in the rain.\nSelling your secrets, profiting from pain.\nYeah, it’s a dirty game, but the Quarters ring true.\nI’m a parasite, darling... but so are you.",
+    kor: "새는 우산 아래서, 우리는 빗속에서 춤을 춰.\n너의 비밀을 팔아넘기고, 고통으로 이윤을 남기지.\n그래, 참 더러운 게임이야. 하지만 쿼터 소리는 영롱하잖아.\n난 기생충이야, 달링... 하지만 너도 마찬가지잖아."
+  },
+  {
+    eng: "So bring me your whispers... bring me your lies.\nEverything has a price under these fake skies.",
+    kor: "그러니 네 속삭임을 가져와... 네 거짓말도 가져와.\n이 가짜 하늘 아래선 모든 것에 가격표가 붙어있으니까."
+  },
+  {
+    eng: "Yeah... just pay up.",
+    kor: "그래... 돈이나 내시지."
+  }
+];
 export const CHARACTERS = [
   {
     id: "calix",

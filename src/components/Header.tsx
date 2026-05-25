@@ -11,6 +11,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
     { id: 'infra', label: '아르카 인프라' },
     { id: 'locations', label: '구역 안내' },
     { id: 'characters', label: '인물 DB' },
+    { id: 'music', label: 'MUSIC' },
   ];
 
   return (

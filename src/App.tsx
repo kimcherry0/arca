@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { CharacterCard } from './components/CharacterCard';
 import { LocationModal } from './components/LocationModal';
-import { AudioPlayer } from './components/AudioPlayer';
-import { WORLDVIEW, LOCATIONS, CHARACTERS } from './data';
+import ReactPlayer from 'react-player';
+import { WORLDVIEW, LOCATIONS, CHARACTERS, LYRICS } from './data';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('worldview');
@@ -20,7 +20,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['worldview', 'infra', 'locations', 'characters'];
+      const sections = ['worldview', 'infra', 'locations', 'characters', 'music'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -178,6 +178,36 @@ export default function App() {
           </div>
         </section>
 
+        {/* SECTION 5: MUSIC */}
+        <section id="music" className="space-y-12 scroll-mt-32">
+          <SectionTitle title="SYSTEM.BGM" subtitle="MUSIC" />
+          
+          <div className="flex flex-col lg:flex-row gap-12 items-start mt-8">
+            {/* Video Embed */}
+            <div className="w-full lg:w-1/2 sticky top-32">
+              <div className="aspect-video w-full rounded-xl overflow-hidden border border-slate-700/50 shadow-[0_0_30px_rgba(0,0,0,0.5)] bg-black">
+                <ReactPlayer 
+                  url="https://www.youtube.com/watch?v=J4QGeOffqKg"
+                  width="100%"
+                  height="100%"
+                  controls={true}
+                  playing={false}
+                />
+              </div>
+            </div>
+
+            {/* Lyrics */}
+            <div className="w-full lg:w-1/2 space-y-8 pb-12">
+               {LYRICS.map((lyric, i) => (
+                 <div key={i} className="space-y-2">
+                   <p className="text-slate-300 font-serif italic text-lg leading-relaxed whitespace-pre-line">{lyric.eng}</p>
+                   <p className="text-slate-500 text-sm leading-relaxed whitespace-pre-line">{lyric.kor}</p>
+                 </div>
+               ))}
+            </div>
+          </div>
+        </section>
+
       </main>
 
       {isGlitching && (
@@ -188,8 +218,6 @@ export default function App() {
            </h1>
         </div>
       )}
-      
-      <AudioPlayer />
       
       <LocationModal 
         isOpen={!!selectedLocation} 
